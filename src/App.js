@@ -97,6 +97,10 @@ function App() {
   function closeModal() {
     setIsModalOpen(false);
   }
+
+  function openRegistry() {
+    setIsRegistryOpen(true);
+  }
   return (
     <>
       <div className="register-form">
@@ -237,6 +241,11 @@ function App() {
           </div>
         </div>
       ) : null}
+      {isRegistryOpen ? null : (
+        <button onClick={openRegistry} className="see-registry">
+          Go Through Registry
+        </button>
+      )}
     </>
   );
 }
