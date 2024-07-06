@@ -1,0 +1,173 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.register-form{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  border: solid 1px saddlebrown;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 5px;
+}
+.register-form h3{
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+.register-form input{
+  width: 100%;
+  padding: 8px;
+  border: solid 0.5px sienna;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.register-form .register{
+  width: 30%;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: forestgreen;
+  color: lavenderblush;
+  border: solid ;
+  margin-left: 180px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.register:hover{
+  cursor: pointer;
+  background-color: green;
+}
+.complete-registry-container{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.complete-registry-container h1{
+  position: fixed;
+  top: 40px;
+  left: 200px;
+  color: aliceblue;
+}
+.nurse{
+  position: relative;
+  width: 33%;
+  padding: 30px;
+  background-color: antiquewhite;
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ok-close{
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 8px;
+  color:azure;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: solid 2px salmon;
+  background-color:chocolate;
+  cursor: pointer;
+}
+.ok-close:hover{
+  background-color: brown;
+}
+.edit, .delete{
+  position: absolute;
+  width: 70px;
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.edit{
+  top: 30px;
+  right: 30px;
+}
+.edit:hover{
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.delete{
+  bottom: 30px;
+  right: 30px;
+}
+.delete:hover{
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.modal{
+ width: 100%;
+ height: 100vh;
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ background-color: rgba(112, 128, 144, 0.7);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+}
+.inner-modal{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  padding: 40px;
+  background-color: cornsilk;
+  border: solid 0.4px;
+  border-radius: 8px;
+}
+.inner-modal input{
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 0.5px;
+  margin-bottom: 5px;
+}
+.inner-modal button{
+  width: 200px;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid;
+  margin-left: 110px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.update{
+ background-color: seagreen;
+ color: #fff;
+ cursor: pointer;
+}
+.cancel{
+  background-color:orangered;
+  color: #fff;
+  cursor: pointer;
+ }
+ .update:hover{
+  background-color: green;
+ }
+ .cancel:hover{
+  background-color:red;
+ }
